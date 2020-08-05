@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "eslint:recommended", "prettier", "prettier/react"],
+  "globals": {
+    "window": true,
+    "document": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["./src"],
+        "extensions": [".js"]
+      }
+    }
+  },
+  "rules": {
+    "react/jsx-filename-extension": 0,
+    "no-plusplus": [2, { "allowForLoopAfterthoughts": true }]
+  }
+}
